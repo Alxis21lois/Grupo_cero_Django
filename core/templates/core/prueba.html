@@ -8,8 +8,22 @@
 </head>
 <body>
     <h1>PRUEBA</h1>
-    {% for item in todosA %}
-        <p>{{ item }}</p>
-    {% endfor %}
+
+    <table>
+        <tr>
+            <td>Nombre Autor</td>
+            <td>Historia</td>
+        </tr>
+        {% for item in todosA %}
+        <tr>
+            <td>{{item.nombre}}</td>
+            <td>{{item.historia}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    
+
+    
 </body>
 </html>

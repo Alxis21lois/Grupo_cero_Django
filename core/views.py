@@ -6,6 +6,9 @@ def index(request):
     return render(request,'core/index.html')
 
 def prueba(request):
-        todos_autores = Autor.objects.all
-        return render(request, "core/prueba.html", {'todosA', todos_autores})
+        todos_autores = Autor.objects.all()
+        datos = {"todosA" : todos_autores}
+
+
+        return render(request, "core/prueba.html", datos)
 
