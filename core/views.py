@@ -6,7 +6,7 @@ from .models import Autor
 
 def prueba(request):
         autores = Autor.objects.all()
-        datos = {"todosA" : autores}
+        datos = {"autores" : autores}
         
         return render(request, "core/prueba.html", datos)
 

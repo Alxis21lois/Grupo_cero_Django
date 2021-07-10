@@ -9,8 +9,12 @@
 </head>
 <body>
     <h1>PRUEBA</h1>
-
     
-
+    
+    {% for i in  autores%}
+        <p>{{i.nombre}}</p>
+        <br>
+        <img src="{{i.img.url}}"  alt="">
+    {% endfor %}
 </body>
 </html>

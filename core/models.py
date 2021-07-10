@@ -5,7 +5,7 @@ class Autor(models.Model):
     idAutor = models.IntegerField(primary_key=True,verbose_name="Id autor")
     nombre = models.CharField(max_length=250,verbose_name="Nombre autor")
     historia = models.TextField(verbose_name="Historia")
-    img = models.ImageField(upload_to='autores/', max_length=255)
+    img = models.ImageField(upload_to='autores', null=True)
 
 
 
