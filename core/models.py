@@ -8,7 +8,6 @@ class Autor(models.Model):
     img = models.ImageField(upload_to='autores', null=True)
 
 
-
     def __str__(self):
         return  self.nombre
         return  self.historia
