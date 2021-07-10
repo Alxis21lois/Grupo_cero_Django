@@ -7,7 +7,6 @@ from .models import Autor
 def prueba(request):
         todos_autores = Autor.objects.all()
         datos = {"todosA" : todos_autores}
-
-
+        
         return render(request, "core/prueba.html", datos)
 
