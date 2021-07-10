@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
                 ('idAutor', models.IntegerField(primary_key=True, serialize=False, verbose_name='Id autor')),
                 ('nombre', models.CharField(max_length=250, verbose_name='Nombre autor')),
                 ('historia', models.TextField(verbose_name='Historia')),
+                ('img' , models.CharField(max_length=250,verbose_name="path_img"))
             ],
         ),
     ]
